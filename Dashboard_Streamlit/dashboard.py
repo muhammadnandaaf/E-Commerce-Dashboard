@@ -13,10 +13,10 @@ sns.set(style='dark')
 datetime= ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
 
 # Dataset 
-all_df = pd.read_csv("../Dashboard_Streamlit/all_datasets.csv")
+all_df = pd.read_csv("Dashboard_Streamlit/all_datasets.csv")
 
 # All Geo Dataset
-geo_df = pd.read_csv("../Data/E-Commerce Public Dataset/geolocation_dataset.csv")
+geo_df = pd.read_csv("Data/E-Commerce Public Dataset/geolocation_dataset.csv")
 
 for col in datetime:
     all_df[col] = pd.to_datetime(all_df[col])
