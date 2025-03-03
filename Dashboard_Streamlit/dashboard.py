@@ -30,7 +30,7 @@ with st.sidebar:
     st.title("M. Nandaarjuna F.")
 
     # Logo Image
-    st.image("./date_img.jpg")
+    st.image("Dashboard_Streamlit//date_img.jpg")
 
     # Date Range
     start_date, end_date = st.date_input(
